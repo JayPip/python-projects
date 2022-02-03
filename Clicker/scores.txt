@@ -1,5 +1,0 @@
-kuba 3.6
-anna 4
-lot 3.8
-kubi 3.0
-lotka 4.0
