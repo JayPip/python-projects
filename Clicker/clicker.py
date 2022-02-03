@@ -9,6 +9,7 @@ from tkinter import ttk
 from tempfile import mkstemp
 from shutil import move, copymode
 from os import fdopen, remove
+import os
 
 form = Tk()
 
@@ -67,6 +68,8 @@ def timerThread():
 
 
 def getData():
+    if not os.path.exists('scores.txt'):
+        with open('scores.txt', 'w'): pass
     f = open("scores.txt", "r")
     fileData = f.readlines()
     f.close()
